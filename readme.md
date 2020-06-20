@@ -9,12 +9,17 @@ and try it out directly in your browser.
 
 ### Editing in gitpod.io
 
-Once the project is open in gitpod.io you can run the individual examples using `jbang <file>` or simply run it `.\<file>`. 
+Once the project is open in gitpod.io you can run the individual examples using `jbang <file>` or simply run it `.\<file>`, for example:
+
+```
+./examples/helloword.java GitPod!
+Hello GitPod!
+```
 
 For editing you get the best experience by using `--edit-live`. For example to edit `hello.java` do the following:
 
 ```
-jbang --edit-live helloworld.java
+jbang --edit-live examples/helloworld.java
 ```
 
 The output will print a url - open that url and you will have a gitpod.io setup with the resolved java dependencies.
