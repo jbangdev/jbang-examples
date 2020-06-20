@@ -1,0 +1,4 @@
+{
+    "java.autobuild.enabled": false,
+    "java.server.launchMode": "LightWeight"
+}
