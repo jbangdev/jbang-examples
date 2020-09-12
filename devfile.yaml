@@ -1,0 +1,24 @@
+---
+apiVersion: 1.0.0
+metadata:
+  name: jbang-examples
+components:
+  -
+    type: chePlugin
+    id: redhat/java/latest
+  -
+    type: dockerimage
+    alias: tools
+    image: mcr.microsoft.com/vscode/devcontainers/universal:linux
+    env:
+      - name: JAVA_OPTS
+        value: "-XX:MaxRAMPercentage=50 -XX:+UseParallelGC -XX:MinHeapFreeRatio=10
+          -XX:MaxHeapFreeRatio=20 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90
+          -Dsun.zip.disableMemoryMapping=true -Xms20m -Djava.security.egd=file:/dev/./urandom"
+      - name: JAVA_TOOL_OPTIONS
+        value: "-XX:MaxRAMPercentage=50 -XX:+UseParallelGC -XX:MinHeapFreeRatio=10
+          -XX:MaxHeapFreeRatio=20 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90
+          -Dsun.zip.disableMemoryMapping=true -Xms20m -Djava.security.egd=file:/dev/./urandom"
+    memoryLimit: 512Mi
+    mountSources: true
+
