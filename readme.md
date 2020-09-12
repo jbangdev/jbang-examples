@@ -1,5 +1,7 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/jbangdev/jbang-examples)
 
+[![Che](https://www.eclipse.org/che/contribute.svg)](https://che.openshift.io/f?url=https://github.com/jbangdev/jbang-examples)
+
 ## JBang Examples 
 
 Repository with various [`jbang`](https://jbang.dev) examples.
