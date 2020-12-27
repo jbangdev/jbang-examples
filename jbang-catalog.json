@@ -1,5 +1,4 @@
 {
-  "catalogs": {},
   "aliases": {
     "jfxtiles": {
       "script-ref": "examples/jfxtiles.java"
@@ -111,6 +110,60 @@
     },
     "jetty": {
       "script-ref": "examples/jetty.jsh"
+    },
+    "NanoClock": {
+      "script-ref": "examples/NanoClock.java"
+    },
+    "asciidoctor": {
+      "script-ref": "examples/asciidoctor.java"
+    },
+    "gh_release_stats": {
+      "script-ref": "examples/gh_release_stats.java"
+    },
+    "grabavatars": {
+      "script-ref": "examples/grabavatars.java"
+    },
+    "ilc": {
+      "script-ref": "examples/ilc.java"
+    },
+    "mockneatSQL": {
+      "script-ref": "examples/mockneatSQL.java"
+    },
+    "plantuml": {
+      "script-ref": "examples/plantuml.java"
+    },
+    "quarkus": {
+      "script-ref": "examples/quarkus.java"
+    },
+    "quarkusadv": {
+      "script-ref": "examples/quarkusadv.java"
+    },
+    "quarkuscli": {
+      "script-ref": "examples/quarkuscli.java"
+    },
+    "quarkusclidb": {
+      "script-ref": "examples/quarkusclidb.java"
+    },
+    "quarkusclireddis": {
+      "script-ref": "examples/quarkusclireddis.java"
+    },
+    "quarkusjib": {
+      "script-ref": "examples/quarkusjib.java"
+    },
+    "quarkusmetrics": {
+      "script-ref": "examples/quarkusmetrics.java"
+    },
+    "quarkusnew": {
+      "script-ref": "examples/quarkusnew.java"
+    },
+    "resource": {
+      "script-ref": "examples/resource.java"
+    },
+    "update_catalog": {
+      "script-ref": "examples/update_catalog.java"
+    },
+    "viewics": {
+      "script-ref": "examples/viewics.java"
     }
   }
 }
