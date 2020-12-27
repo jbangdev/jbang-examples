@@ -1,0 +1,116 @@
+{
+  "catalogs": {},
+  "aliases": {
+    "jfxtiles": {
+      "script-ref": "examples/jfxtiles.java"
+    },
+    "perftest": {
+      "script-ref": "examples/benchmark/perftest.java"
+    },
+    "hibernate": {
+      "script-ref": "examples/hibernate.java"
+    },
+    "jfx": {
+      "script-ref": "examples/jfx.java"
+    },
+    "junitrun": {
+      "script-ref": "examples/junitrun.java"
+    },
+    "findmodule": {
+      "script-ref": "examples/findmodule.java"
+    },
+    "records": {
+      "script-ref": "examples/records.java"
+    },
+    "progress": {
+      "script-ref": "examples/progress.java"
+    },
+    "webdriver": {
+      "script-ref": "examples/webdriver.java"
+    },
+    "junit-run": {
+      "script-ref": "examples/junit-run.java"
+    },
+    "camel": {
+      "script-ref": "examples/camel.java"
+    },
+    "asciidoc": {
+      "script-ref": "examples/asciidoc.java"
+    },
+    "gh_fetch_release_assets": {
+      "script-ref": "examples/gh_fetch_release_assets.java"
+    },
+    "piping": {
+      "script-ref": "examples/piping.java"
+    },
+    "smee": {
+      "script-ref": "examples/smee.java"
+    },
+    "lang": {
+      "script-ref": "examples/lang.java"
+    },
+    "docker": {
+      "script-ref": "examples/docker.java"
+    },
+    "classpath_example": {
+      "script-ref": "examples/classpath_example.jsh"
+    },
+    "tz": {
+      "script-ref": "examples/tz.java"
+    },
+    "vertx": {
+      "script-ref": "examples/vertx.java"
+    },
+    "urldep": {
+      "script-ref": "examples/urldep.java"
+    },
+    "helloworld": {
+      "script-ref": "examples/helloworld.jsh"
+    },
+    "undertow": {
+      "script-ref": "examples/undertow.java"
+    },
+    "inetTest": {
+      "script-ref": "examples/inetTest.java"
+    },
+    "envdetector": {
+      "script-ref": "examples/envdetector.java"
+    },
+    "shrinkwrap": {
+      "script-ref": "examples/shrinkwrap.java"
+    },
+    "resteasyclient": {
+      "script-ref": "examples/resteasyclient.java"
+    },
+    "adoptopenjdk": {
+      "script-ref": "examples/adoptopenjdk.java"
+    },
+    "analytics": {
+      "script-ref": "examples/analytics.java"
+    },
+    "imap": {
+      "script-ref": "examples/imap.java"
+    },
+    "githubinfo": {
+      "script-ref": "examples/githubinfo.java"
+    },
+    "script": {
+      "script-ref": "examples/script.java"
+    },
+    "ratpack": {
+      "script-ref": "examples/ratpack.java"
+    },
+    "checksum": {
+      "script-ref": "examples/checksum.java"
+    },
+    "s3upload": {
+      "script-ref": "examples/s3upload.java"
+    },
+    "sparkjava": {
+      "script-ref": "examples/sparkjava.java"
+    },
+    "jetty": {
+      "script-ref": "examples/jetty.jsh"
+    }
+  }
+}
