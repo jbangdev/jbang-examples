@@ -130,6 +130,9 @@
     "mockneatSQL": {
       "script-ref": "examples/mockneatSQL.java"
     },
+    "opencv_ball_tracker": {
+      "script-ref": "examples/opencv_ball_tracker.java"
+    },
     "plantuml": {
       "script-ref": "examples/plantuml.java"
     },
