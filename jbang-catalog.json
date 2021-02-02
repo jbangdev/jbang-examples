@@ -1,4 +1,5 @@
 {
+  "catalogs": {},
   "aliases": {
     "jfxtiles": {
       "script-ref": "examples/jfxtiles.java"
@@ -164,6 +165,9 @@
     },
     "viewics": {
       "script-ref": "examples/viewics.java"
+    },
+    "qchat": {
+      "script-ref": "examples/qchat.java"
     }
   }
 }
