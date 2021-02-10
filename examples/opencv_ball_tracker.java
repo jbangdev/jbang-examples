@@ -168,7 +168,7 @@ public class opencv_ball_tracker extends Application {
         if (hierarchy.size().height > 0 && hierarchy.size().width > 0) {
             // for each contour, display it in blue
             for (int idx = 0; idx >= 0; idx = (int) hierarchy.get(0, idx)[0]) {
-                Imgproc.drawContours(frame, contours, idx, new Scalar(0, 0, 255));
+                Imgproc.drawContours(frame, contours, idx, new Scalar(255, 0, 0),5);
             }
         }
 
