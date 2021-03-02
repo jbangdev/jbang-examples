@@ -1,7 +1,8 @@
 ///usr/bin/env jbang "$0" "$@" ; exit $?
 //DEPS info.picocli:picocli:4.5.0
-//DEPS org.apache.camel:camel-core:3.0.1
-//DEPS org.apache.camel:camel-main:3.0.1
+//DEPS org.apache.camel:camel-core:3.8.0
+//DEPS org.apache.camel:camel-main:3.8.0
+//DEPS org.apache.camel:camel-stream:3.8.0
 //DEPS org.slf4j:slf4j-nop:1.7.25
 
 import org.apache.camel.builder.RouteBuilder;
@@ -30,11 +31,12 @@ class camel implements Callable<Integer> {
     public Integer call() throws Exception { // your business logic goes here...
         Main main = new Main();
 
-        main.addRoutesBuilder(new RouteBuilder() {
+        main.configure().addRoutesBuilder(new RouteBuilder() {
             @Override
             public void configure() throws Exception {
                 from("timer:test?period=1000")
-                        .process(e -> out.println("Hello " + greeting));
+                        .transform().constant("Hello " + greeting)
+                        .to("stream:out");
             }
         });
 
