@@ -14,7 +14,7 @@ and try it out directly in your browser.
 Once the project is open in gitpod.io you can run the individual examples using `jbang <file>` or simply run it `.\<file>`, for example:
 
 ```
-./examples/helloword.java GitPod!
+./examples/helloworld.java GitPod!
 Hello GitPod!
 ```
 
