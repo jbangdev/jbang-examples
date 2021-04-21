@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Stock Market !!!"</title>
+
+    <style>
+    body {margin:0;}
+
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .navbar p {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 10px 10px;
+      text-decoration: none;
+      font-size: 30px;
+    }
+
+    .main {
+      padding: 16px;
+      margin-top: 30px;
+      height: 1500px; /* Used in this example to enable scrolling */
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 100px 0 0 0;
+      overflow: hidden;
+      background-color: #262626;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111111;
+    }
+
+    a:hover {
+        color: yellow;
+        text-decoration:none
+    }
+
+    div.loader {
+    height: 10em;
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 10%}
+
+    div.loader h3 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+    </style>
+
+    <script>
+    var SERVER_HOST = "http://localhost:9090/"
+    $('.loader').hide();
+    function getAllCurrenciesNames(){
+          $('.loader').show();
+          $.get(SERVER_HOST + "stock/currency/names", function(data, status){
+            $('.loader').hide();
+            if (status == "success") {
+                var names = jQuery.parseJSON(JSON.stringify(data)).index;
+                var cList = $('ul.currencies')
+                $.each(names, function(i)
+                {
+                    var li = $('<li/>')
+                        .addClass('ui-menu-item')
+                        .attr('role', 'menuitem')
+                        .appendTo(cList);
+                    var aaa = $('<a/>')
+                        .attr("onClick", "getCurrencyValue('"+names[i]+"');")
+                        .attr("href", "#")
+                        .text(names[i])
+                        .appendTo(li);
+                });
+            }
+        });
+    }
+
+    function getCurrencyValue(currencyValue){
+     $.get(SERVER_HOST + "stock/currency/" + currencyValue, function(data, status){
+        if (status == "success") {
+            var btc = jQuery.parseJSON(JSON.stringify(data)).bitcoin;
+            var usd = jQuery.parseJSON(JSON.stringify(data)).uniteStateDollar;
+            var eur = jQuery.parseJSON(JSON.stringify(data)).euro;
+            document.getElementById("btc").innerHTML = btc;
+            document.getElementById("usd").innerHTML = usd;
+            document.getElementById("eur").innerHTML = eur;
+        }
+     });
+    }
+  </script>
+</head>
+<body onload="getAllCurrenciesNames()">
+
+<div class="loader">
+    <h3> Loading ... </h3>
+</div>
+
+<div class="navbar">
+    <p>EUR: <span id="eur">N/A</span></p>
+    <p>BTC: <span id="btc">N/A</span></p>
+    <p>USD: <span id="usd">N/A</span></p>
+</div>
+
+<ul class="currencies"> </ul>
+</body>
+</html>
