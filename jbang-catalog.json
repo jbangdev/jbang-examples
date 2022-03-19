@@ -171,6 +171,11 @@
     },
     "qchat": {
       "script-ref": "examples/qchat.java"
+    },
+    "ecsh": {
+      "script-ref": "examples/ecsh.jsh",
+      "description": "Eclipse Collections API for scripting\nTry out using `jbang -s ecsh@jbangdev -i`"
     }
-  }
+  },
+  "templates": {}
 }
