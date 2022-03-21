@@ -1,7 +1,7 @@
 ///usr/bin/env jbang "$0" "$@" ; exit $?
 //JAVA 18+
 //FILES META-INF/services/java.net.spi.InetAddressResolverProvider=java.net.spi.InetAddressResolverProvider
-//SOURCES *.java
+//SOURCES J18InetAddresResolverProvider.java
 package java18;
 
 import java.net.InetAddress;
