@@ -13,7 +13,7 @@ import java.util.stream.Stream;
 public class J18InetAddressResolverProvider extends InetAddressResolverProvider {
 
     public static void main(String... args) throws UnknownHostException {
-        String host = args.length > 0 ? args[1] : "www.jbang.dev";
+        String host = args.length > 0 ? args[0] : "www.jbang.dev";
         InetAddress[] addresses = InetAddress.getAllByName(host);
         System.out.println("addresses for " + host + ": " + Arrays.toString(addresses));
     }
