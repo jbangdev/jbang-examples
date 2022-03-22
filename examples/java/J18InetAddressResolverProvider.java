@@ -1,14 +1,23 @@
+///usr/bin/env jbang "$0" "$@" ; exit $?
+//JAVA 18+
+//FILES META-INF/services/java.net.spi.InetAddressResolverProvider=java.net.spi.InetAddressResolverProvider
 package java18;
-
-import java18.java18;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.net.spi.InetAddressResolver;
 import java.net.spi.InetAddressResolverProvider;
+import java.util.Arrays;
 import java.util.stream.Stream;
 
 public class J18InetAddressResolverProvider extends InetAddressResolverProvider {
+
+    public static void main(String... args) throws UnknownHostException {
+        String host = args.length > 1 ? args[1] : "www.jbang.dev";
+        InetAddress[] addresses = InetAddress.getAllByName(host);
+        System.out.println("addresses for " + host + ": " + Arrays.toString(addresses));
+    }
+
     @Override
     public InetAddressResolver get(Configuration configuration) {
         return new J18InetAddressResolver();
