@@ -178,6 +178,9 @@
     },
     "j18inetresolver": {
       "script-ref": "examples/java/J18InetAddressResolverProvider.java"
+    },
+    "symjajsh": {
+      "script-ref": "examples/symja.jsh"
     }
   },
   "templates": {}
