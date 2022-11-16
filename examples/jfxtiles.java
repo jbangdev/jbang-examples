@@ -1,4 +1,5 @@
 //DEPS eu.hansolo:tilesfx:11.30
+//JAVA 11+
 /*
  * Copyright (c) 2017 by Gerrit Grunwald
  *

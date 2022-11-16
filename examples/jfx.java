@@ -1,5 +1,6 @@
 //DEPS org.openjfx:javafx-controls:11.0.2:${os.detected.jfxname}
 //DEPS org.openjfx:javafx-graphics:11.0.2:${os.detected.jfxname}
+//JAVA 11+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
