@@ -7,7 +7,7 @@ set javaVersion=11
 set os=windows
 set arch=x64
 
-set url="https://api.adoptopenjdk.net/v3/binary/latest/%javaVersion%/ga/%os%/%arch%/jdk/hotspot/normal/adoptopenjdk"
+set url="https://api.adoptium.net/v3/binary/latest/%javaVersion%/ga/%os%/%arch%/jdk/hotspot/normal/eclipse"
 
 rem resolve application jar path from script location and convert to windows path when using cygwin
 if exist "%~dp0jbang.jar" (
