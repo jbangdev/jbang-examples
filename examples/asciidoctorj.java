@@ -20,7 +20,7 @@
 //
 // Example 1 - create a AsciidoctorJ-RevealJS presentation
 //
-// $ jbang run asciidoctorj@wfouche \
+// $ jbang run asciidoctorj.java \
 //    -r asciidoctor-revealjs \
 //    -r asciidoctor-diagram \
 //    presentation.adoc \
