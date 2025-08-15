@@ -15,6 +15,6 @@ public class TurtleDemo {
             }
             joe.left(36);
         }
-        joe.hide();
+        joe.left(90);
     }
 }
