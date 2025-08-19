@@ -1,5 +1,7 @@
 //usr/bin/env jbang "$0" "$@" ; exit $?
 
+// Game developed using Google Gemini AI (2.5 Pro)
+
 //DEPS org.lwjgl:lwjgl:3.3.6
 //DEPS org.lwjgl:lwjgl-glfw:3.3.6
 //DEPS org.lwjgl:lwjgl-opengl:3.3.6
