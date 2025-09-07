@@ -50,7 +50,13 @@
 //  "org.lwjgl:lwjgl:3.3.6:natives-linux-arm64",
 //  "org.lwjgl:lwjgl-glfw:3.3.6:natives-linux-arm64",
 //  "org.lwjgl:lwjgl-opengl:3.3.6:natives-linux-arm64"]
-// 
+//
+// [java.version.24]
+// runtimeOptions = ["--enable-native-access=ALL-UNNAMED", "--sun-misc-unsafe-memory-access=allow"]
+//
+// [java.version.25]
+// runtimeOptions = ["--enable-native-access=ALL-UNNAMED", "--sun-misc-unsafe-memory-access=allow"]
+//
 // ###
 
 import org.lwjgl.glfw.*;
