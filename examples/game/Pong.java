@@ -2,6 +2,10 @@
 
 // Game developed using Google Gemini AI (2.5 Pro)
 
+// Ignore unrecognized VM options to mark the application as a macOS app and 
+// start on first thread - others will ignore
+//RUNTIME_OPTIONS -XX:+IgnoreUnrecognizedVMOptions -XstartOnFirstThread
+
 //DEPS org.lwjgl:lwjgl:3.3.6
 //DEPS org.lwjgl:lwjgl-glfw:3.3.6
 //DEPS org.lwjgl:lwjgl-opengl:3.3.6
